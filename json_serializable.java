@@ -1,0 +1,64 @@
+name: rick_and_morty_info
+description: A new Flutter project.
+
+version: 1.1.0
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI
+  pagination_view: ^2.0.0
+  ant_icons: ^2.0.0-nullsafety.0
+  cached_network_image: ^3.0.0
+
+  # Network
+  graphql_flutter: ^5.0.0
+  internet_connection_checker: ^0.0.1+1
+
+  # Dart data class
+  json_serializable: ^4.1.3
+  freezed_annotation: ^0.14.2
+  functional_enum_annotation: ^1.2.1
+
+  # Dependency Injection
+  get_it: ^7.1.3
+  injectable: ^1.0.4
+
+  # State management
+  flutter_bloc: ^7.0.1
+
+  # Caching
+  hive: ^2.0.4
+
+  # Misc
+  dartz: ^0.10.0-nullsafety.2
+  rxdart: ^0.26.0
+  path_provider: ^2.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Code generators
+  freezed: ^0.14.2
+  functional_enum: ^1.1.3
+  injectable_generator: ^1.4.1
+  build_runner: ^2.0.4
+
+  # Linting
+  effective_dart: ^1.3.1
+
+  # Testing
+  bloc_test: ^8.0.2
+  mocktail: ^0.1.4
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: Randm
+      fonts:
+        - asset: fonts/Medium.ttf
