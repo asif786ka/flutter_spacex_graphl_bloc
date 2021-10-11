@@ -43,12 +43,12 @@ Future<_i1.GetIt> $initGetIt(_i1.GetIt get,
       get<_i8.NetworkInfo>(),
       get<_i6.IHomeRemoteDataSource>(),
       get<_i5.IHomeLocalDataSource>()));
-  gh.lazySingleton<_i11.GetCharactersUseCase>(
-      () => _i11.GetCharactersUseCase(get<_i9.IHomeRepository>()));
-  gh.lazySingleton<_i12.GetLocationsUseCase>(
-      () => _i12.GetLocationsUseCase(get<_i9.IHomeRepository>()));
+  gh.lazySingleton<_i11.GetLaunchesUseCase>(
+      () => _i11.GetLaunchesUseCase(get<_i9.IHomeRepository>()));
+  gh.lazySingleton<_i12.GetUsersUseCase>(
+      () => _i12.GetUsersUseCase(get<_i9.IHomeRepository>()));
   gh.factory<_i13.HomeBloc>(() => _i13.HomeBloc(
-      get<_i11.GetCharactersUseCase>(), get<_i12.GetLocationsUseCase>()));
+      get<_i11.GetLaunchesUseCase>(), get<_i12.GetUsersUseCase>()));
   return get;
 }
 

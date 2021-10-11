@@ -22,8 +22,8 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
   HomeBloc(this._getCharacter, this._getLocations)
       : super(HomeState.navigationScreenChanged(0));
 
-  final GetCharactersUseCase _getCharacter;
-  final GetLocationsUseCase _getLocations;
+  final GetLaunchesUseCase _getCharacter;
+  final GetUsersUseCase _getLocations;
 
   @override
   Stream<HomeState> mapEventToState(

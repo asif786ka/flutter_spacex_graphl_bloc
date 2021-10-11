@@ -7,8 +7,8 @@ import '../entities/launch.dart';
 import '../repositories/i_home_repository.dart';
 
 @lazySingleton
-class GetCharactersUseCase extends UseCase<List<Launch>, LaunchesParams> {
-  GetCharactersUseCase(this.repository);
+class GetLaunchesUseCase extends UseCase<List<Launch>, LaunchesParams> {
+  GetLaunchesUseCase(this.repository);
 
   final IHomeRepository repository;
 

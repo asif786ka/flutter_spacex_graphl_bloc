@@ -7,8 +7,8 @@ import '../entities/user.dart';
 import '../repositories/i_home_repository.dart';
 
 @lazySingleton
-class GetLocationsUseCase extends UseCase<List<User>, UsersParams> {
-  GetLocationsUseCase(this.repository);
+class GetUsersUseCase extends UseCase<List<User>, UsersParams> {
+  GetUsersUseCase(this.repository);
 
   final IHomeRepository repository;
 
